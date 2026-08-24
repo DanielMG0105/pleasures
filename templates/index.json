@@ -174,7 +174,6 @@
     },
     "featured_collection_Bm6y9Y": {
       "type": "featured-collection",
-      "disabled": true,
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
         "title": "",
@@ -365,7 +364,6 @@
         "1_video_gQrfxm",
         "1_image_QD8rcf"
       ],
-      "disabled": true,
       "settings": {}
     },
     "1736979599cdb48a91": {
