@@ -1,0 +1,1281 @@
+<style>
+  .vertical-carousel{
+    position: relative;
+    overflow: hidden;
+  }
+  html,
+  body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-container .slider {
+    min-height: 100vh;
+  }
+  .swiper-slide {
+    background: #ccc;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+  }
+
+  .swiper-container .slider .swiper-slide .slide-inner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+  
+  .swiper-slide-content{
+    position: relative;
+    max-width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0px;
+  }
+  .swiper-slide-content.two{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .swiper-slide-content__image,
+  .swiper-slide-content__image2{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .swiper-slide-content.two .swiper-slide-content__image,
+  .swiper-slide-content.two .swiper-slide-content__image2{
+    max-width: 50vw;
+  }
+  .swiper-slide-content__cont{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    bottom: 50px;
+  }
+  .swiper-slide-content.leftbottom{
+    align-items: end;
+    justify-items: start;
+    -webkit-align-items: end;
+    -webkit-justify-items: start;
+    
+    text-align: left;
+  }
+  .swiper-slide-content.rightbottom {
+    align-items: end;
+    justify-items: end;
+    -webkit-align-items: end;
+    -webkit-justify-items: end;
+    text-align: right;
+  }
+  .swiper-slide-content.centerbottom{
+    align-items: end;
+    justify-items: center;
+    -webkit-align-items: end;
+    -webkit-justify-items: center;
+    text-align: center;
+  }
+  .swiper-slide-content.centercenter{
+    align-items: center;
+    justify-items: center;
+    -webkit-align-items: center;
+    -webkit-justify-items: center;
+    text-align: center;
+  }
+  .swiper-slide-content.centercenter .swiper-slide-content__cont{
+    bottom: auto;
+  }
+  .swiper-slide-content__cont__title{
+    font-size: 16px;
+  }
+  .wrapper-buttonss{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .wrapper-button a{
+    display: inline-block;
+    width: auto;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .wrapper-button a span{
+    position: relative;
+    z-index: 2;
+  }
+  .wrapper-button a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+    transition: all .35s;
+    z-index: -1;
+  }
+  .wrapper-button a:hover{
+    color: #fff;
+  }
+  .wrapper-button a:hover:after{
+    width: 100%;
+  }
+  .swiper-slide-content__video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide-content__video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  .swiper-slide-content__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: block !important;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet{
+    background: #cfcfcf;
+    opacity: .8;
+    height: 3px;
+    width: 3px;
+    box-shadow: -2px 0px 4px #000;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: #fff;
+    opacity: 1;
+    height: 25px;
+    border-radius: 2px;
+  }
+
+  .show-footer-index{
+    left: calc(50% - 25px);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 50px;
+    bottom: -10px;
+    cursor: pointer;
+    color: #fff;
+    animation: moveUpDown 1.5s infinite ease-in-out;
+    z-index: 3;
+  }
+
+  .desk{
+    display: block !important;
+  }
+
+  .mob{
+    display: none !important;
+  }
+
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust the value for desired movement */
+    }
+  }
+ 
+  @media screen and (max-width: 750px){
+    .swiper-slide-content__cont{
+      bottom: 100px;
+    }
+    body.ios .swiper-slide-content__cont {
+      bottom: 130px;
+    }
+    .swiper-slide-content.centercenter .swiper-slide-content__cont{
+      bottom: auto;
+    }
+    .swiper-slide-content.two {
+      grid-template-columns: 1fr;
+    }
+    .swiper-slide-content.two .swiper-slide-content__image, 
+    .swiper-slide-content.two .swiper-slide-content__image2 {
+      max-width: 100vw;
+    }
+    .desk{
+      display: none !important;
+    }
+    .mob{
+      display: block !important;
+    }
+    
+    .swiper-slide-content.main .swiper-slide-content__image.mob{
+      display: block !important;
+    }
+    .swiper-slide-content.main .swiper-slide-content__image2.mob{
+      display: none !important;
+    }
+    .swiper-slide-content.second .swiper-slide-content__image.mob{
+      display: none !important;
+    }
+    .swiper-slide-content.second .swiper-slide-content__image2.mob{
+      display: block !important;
+    }
+    
+    .swiper-slide-content.main .swiper-slide-content__video.video1.mob{
+      display: block !important;
+    }
+    .swiper-slide-content.main .swiper-slide-content__video.video2.mob{
+      display: none !important;
+    }
+    .swiper-slide-content.second .swiper-slide-content__video.video1.mob{
+      display: none !important;
+    }
+    .swiper-slide-content.second .swiper-slide-content__video.video2.mob{
+      display: block !important;
+    }
+    
+    .show-footer-index{
+      bottom: 50px;
+    }
+    body.ios .show-footer-index{
+      bottom: 100px;
+    }
+  }
+</style>
+
+<div class="swiper swiper-container" id="vertical-carousel-{{ section.id }}">
+  <div class="swiper-wrapper slider">
+     <!--"id": "image1" "id": "image1_m" "id": "video_main" "id": "video_main_m"
+        "id": "image2" "id": "image2_m" "id": "video" "id": "video_m"
+        "id": "image_mobile"-->
+    {% for block in section.blocks %}
+      <div class="swiper-slide">
+        {% case block.type %}
+          
+          {% when '1-image' %}
+           <div class="slide-inner">
+              <div class="swiper-slide-content {{ block.settings.position }}">
+                <div class="swiper-slide-content__image desk" style="background-image: url({{ block.settings.image1 | img_url: 'master' }});"> </div>
+                <div class="swiper-slide-content__image mob" style="background-image: url({{ block.settings.image1_m | img_url: 'master' }});"> </div>
+                {% if forloop.last %}
+                  {% render 'vertical-carousel-icon-arrow' %}
+                {% endif %}
+                {% render 'vertical-carousel-content', 
+                    overlay_color: block.settings.overlay_color,
+                    opacity: block.settings.opacity, 
+                    title: block.settings.title, 
+                    description: block.settings.description, 
+                    link: block.settings.link, button_text: block.settings.button_text  %}
+              </div>
+            </div>
+          
+          {% when '1-video' %}
+            <div class="slide-inner">
+              <div class="swiper-slide-content {{ block.settings.position }}">
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main, class_custom: "desk" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main_m, class_custom: "mob" %}
+                {% if forloop.last %}
+                  {% render 'vertical-carousel-icon-arrow' %}
+                {% endif %}
+                {% render 'vertical-carousel-content', 
+                    overlay_color: block.settings.overlay_color,
+                    opacity: block.settings.opacity, 
+                    title: block.settings.title, 
+                    description: block.settings.description, 
+                    link: block.settings.link, button_text: block.settings.button_text  %}
+              </div>
+            </div>
+          
+          {% when '2-images' %}
+            <div class="slide-inner">
+                <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}" >
+                  {% if block.settings.video %}
+                  {% else %}
+                  {% endif %}
+                  <div class="swiper-slide-content__image desk" style="background-image: url({{ block.settings.image1 | img_url: 'master' }});"> </div>
+                  <div class="swiper-slide-content__image2 desk" style="background-image: url({{ block.settings.image2 | img_url: 'master' }});"> </div>
+                  <div class="swiper-slide-content__image mob" style="background-image: url({{ block.settings.image1_m | img_url: 'master' }});"> </div>
+                  <div class="swiper-slide-content__image2 mob" style="background-image: url({{ block.settings.image2_m | img_url: 'master' }});"> </div>
+                  {% if forloop.last %}
+                    {% render 'vertical-carousel-icon-arrow' %}
+                  {% endif %}
+                  {% render 'vertical-carousel-content', 
+                    overlay_color: block.settings.overlay_color,
+                    opacity: block.settings.opacity, 
+                    title: block.settings.title, 
+                    description: block.settings.description, 
+                    link: block.settings.link, button_text: block.settings.button_text  %}
+                </div>
+            </div>
+          
+          {% when '2-videos' %}
+           <div class="slide-inner">
+              <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}">
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main, class_custom: "desk" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video, class_custom: "desk" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main_m, class_custom: "video1 mob" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_m, class_custom: "video2 mob" %}
+                {% if forloop.last %}
+                  {% render 'vertical-carousel-icon-arrow' %}
+                {% endif %}
+                {% render 'vertical-carousel-content', 
+                    overlay_color: block.settings.overlay_color,
+                    opacity: block.settings.opacity, 
+                    title: block.settings.title, 
+                    description: block.settings.description, 
+                    link: block.settings.link, button_text: block.settings.button_text  %}
+              </div>
+            </div>
+          
+          {% when 'image-left--video-right' %}
+            <div class="slide-inner">
+              <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}" >
+                {% if block.settings.video %}
+                {% else %}
+                {% endif %}
+                <div class="swiper-slide-content__image desk" style="background-image: url({{ block.settings.image1 | img_url: 'master' }});"> </div>
+                <div class="swiper-slide-content__image mob" style="background-image: url({{ block.settings.image1_m | img_url: 'master' }});"> </div>
+                {% render 'vertical-carousel-video', video_main: block.settings.video, class_custom: "desk" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_m, class_custom: "video2 mob" %}
+                {% if forloop.last %}
+                  {% render 'vertical-carousel-icon-arrow' %}
+                {% endif %}
+                {% render 'vertical-carousel-content', 
+                  overlay_color: block.settings.overlay_color,
+                  opacity: block.settings.opacity, 
+                  title: block.settings.title, 
+                  description: block.settings.description, 
+                  link: block.settings.link, button_text: block.settings.button_text  %}
+              </div>
+            </div>
+          {% when 'video-left--image-right' %}
+            <div class="slide-inner">
+              <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}" >
+                {% if block.settings.video %}
+                {% else %}
+                {% endif %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main, class_custom: "desk" %}
+                {% render 'vertical-carousel-video', video_main: block.settings.video_main_m, class_custom: "video1 mob" %}
+                <div class="swiper-slide-content__image2 desk" style="background-image: url({{ block.settings.image2 | img_url: 'master' }});"> </div>
+                <div class="swiper-slide-content__image2 mob" style="background-image: url({{ block.settings.image2_m | img_url: 'master' }});"> </div>
+                
+                {% if forloop.last %}
+                  {% render 'vertical-carousel-icon-arrow' %}
+                {% endif %}
+                {% render 'vertical-carousel-content', 
+                  overlay_color: block.settings.overlay_color,
+                  opacity: block.settings.opacity, 
+                  title: block.settings.title, 
+                  description: block.settings.description, 
+                  link: block.settings.link, button_text: block.settings.button_text  %}
+              </div>
+            </div>
+        {% endcase %}
+      </div>
+
+      
+      {% comment %}<div class="swiper-slide">
+        
+        {% if block.settings.image2 or block.settings.video %}
+          
+          {% if  block.settings.video_main and block.settings.video %}  
+
+            <div class="slide-inner ">
+                <div class="swiper-slide-content two {{ block.settings.position }}">
+                  
+                  {% render 'vertical-carousel-video', video_main: block.settings.video_main %}
+                  {% render 'vertical-carousel-video', video_main: block.settings.video %}
+                  {% if forloop.last %}
+                    {% render 'vertical-carousel-icon-arrow' %}
+                  {% endif %}
+                  {% render 'vertical-carousel-content', 
+                      overlay_color: block.settings.overlay_color,
+                      opacity: block.settings.opacity, 
+                      title: block.settings.title, 
+                      description: block.settings.description, 
+                      link: block.settings.link, button_text: block.settings.button_text  %}
+                </div>
+             </div>
+            
+          {% elsif  block.settings.image1 and block.settings.image2 %}
+          {% elsif  block.settings.image1 and block.settings.video %}
+            
+            <div class="slide-inner">
+                <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}" >
+                  <div class="swiper-slide-content__image" style="background-image: url({{ block.settings.image1 | img_url: 'master' }});"> </div>
+                  {% if forloop.last %}
+                    {% render 'vertical-carousel-icon-arrow' %}
+                  {% endif %}
+                  {% render 'vertical-carousel-video', video_main: block.settings.video %}
+                  {% render 'vertical-carousel-content', 
+                    overlay_color: block.settings.overlay_color,
+                    opacity: block.settings.opacity, 
+                    title: block.settings.title, 
+                    description: block.settings.description, 
+                    link: block.settings.link, button_text: block.settings.button_text  %}
+                  
+                </div>
+              </div>
+
+            {% elsif  block.settings.image2 and block.settings.video_main %}
+            
+              <div class="slide-inner">
+                  <div class="swiper-slide-content two {{ block.settings.position }} {{ block.settings.image_mobile }}" >
+                    <div class="swiper-slide-content__image" style="background-image: url({{ block.settings.image2 | img_url: 'master' }});"> </div>
+                    {% if forloop.last %}
+                      {% render 'vertical-carousel-icon-arrow' %}
+                    {% endif %}
+                    {% render 'vertical-carousel-video', video_main: block.settings.video_main %}
+                    {% render 'vertical-carousel-content', 
+                      overlay_color: block.settings.overlay_color,
+                      opacity: block.settings.opacity, 
+                      title: block.settings.title, 
+                      description: block.settings.description, 
+                      link: block.settings.link, button_text: block.settings.button_text  %}
+                    
+                  </div>
+                </div>
+            
+          {% endif %}
+          
+        {% else %}
+          
+          
+          
+        {% endif %}
+         
+          
+     
+        
+       
+        
+      </div>{% endcomment %}
+    {% endfor %}
+  </div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  $(function () {
+
+    if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+        document.body.classList.add('ios');
+    }
+    
+    const interleaveOffset = 0.75;
+    const swiperContainer = document.getElementById('vertical-carousel-{{ section.id }}');
+    var swiper = new Swiper(swiperContainer, {
+      direction: 'vertical',
+      speed: 800,
+      parallax: true,
+      touchReleaseOnEdges: true,
+      watchSlidesProgress: true,
+      pagination: {
+        el: swiperContainer.querySelector('.swiper-pagination'),
+        clickable: false
+      }
+    });
+
+    // Capture one intentional wheel gesture per slide while the carousel fills
+    // the viewport. At either edge, return control to the page scroll.
+    let isScrolling = false;
+    const scrollLockDuration = swiper.params.speed + 400;
+
+    swiperContainer.addEventListener('wheel', function(event) {
+      const rect = this.getBoundingClientRect();
+      const scrollingDown = event.deltaY > 0;
+      const scrollingUp = event.deltaY < 0;
+
+      if (isScrolling) {
+        event.preventDefault();
+        return;
+      }
+
+      // Release the page only at the physical limits of this carousel.
+      if ((scrollingDown && swiper.isEnd) || (scrollingUp && swiper.isBeginning)) return;
+
+      // Let the page reach this carousel naturally, but cap the final wheel
+      // delta at its edge. This prevents trackpad inertia from skipping a
+      // carousel that appears later on the page without snapping it into view.
+      if (scrollingDown && rect.top > 5) {
+        if (event.deltaY > rect.top) {
+          event.preventDefault();
+          window.scrollBy({ top: rect.top, behavior: 'auto' });
+        }
+        return;
+      }
+
+      if (scrollingUp && rect.top < -5) {
+        const distanceToTop = Math.abs(rect.top);
+        if (Math.abs(event.deltaY) > distanceToTop) {
+          event.preventDefault();
+          window.scrollBy({ top: -distanceToTop, behavior: 'auto' });
+        }
+        return;
+      }
+
+      event.preventDefault();
+
+      // Ignore trackpad micro-movements and lock during the transition to
+      // prevent a single gesture from skipping multiple slides.
+      if (Math.abs(event.deltaY) > 15) {
+        isScrolling = true;
+        scrollingDown ? swiper.slideNext() : swiper.slidePrev();
+
+        setTimeout(function() {
+          isScrolling = false;
+        }, scrollLockDuration);
+      }
+    }, { capture: true, passive: false });
+
+    swiper.on('slideChange', () => {
+      const isLastSlide = swiper.activeIndex === swiper.slides.length - 1;
+      if (isLastSlide) {
+        $(swiperContainer).find('.show-footer-index').fadeOut();
+      } else {
+        $(swiperContainer).find('.show-footer-index').fadeIn();
+      }
+    });
+    
+  });
+</script>
+{% schema %}
+{
+  "name": "Vertical carousel",
+  "class": "vertical-carousel",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "1-image",
+      "name": "1 image",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1_m",
+          "label": "Image mobile"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    },
+    {
+      "type": "1-video",
+      "name": "1 video",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "url",
+          "id": "video_main",
+          "label": "Video  mp4"
+        },
+         {
+          "type": "url",
+          "id": "video_main_m",
+          "label": "Video mobile mp4"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    },
+    {
+      "type": "2-images",
+      "name": "2 images",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1_m",
+          "label": "Image mobile"
+        },
+        {
+          "type": "header",
+          "content": "Image secundary"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image secundary"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2_m",
+          "label": "Image secundary mobile"
+        },
+        {
+          "type": "header",
+          "content": "What image show in mobile?"
+        },
+        {
+          "type": "select",
+          "id": "image_mobile",
+          "options": [
+            {
+              "value": "main",
+              "label": "Main image mobile"
+            },
+            {
+              "value": "second",
+              "label": "Secundary image mobile"
+            }
+          ],
+          "default": "main",
+          "label": "?"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    },
+    {
+      "type": "2-videos",
+      "name": "2 videos",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "url",
+          "id": "video_main",
+          "label": "Video mp4"
+        },
+         {
+          "type": "url",
+          "id": "video_main_m",
+          "label": "Video mobile mp4"
+        },
+        {
+          "type": "header",
+          "content": "Video secundary"
+        },
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video secundary mp4"
+        },
+        {
+          "type": "url",
+          "id": "video_m",
+          "label": "Video secundary mp4  mobile"
+        },
+        {
+          "type": "header",
+          "content": "What video show in mobile?"
+        },
+        {
+          "type": "select",
+          "id": "image_mobile",
+          "options": [
+            {
+              "value": "main",
+              "label": "Main video mobile"
+            },
+            {
+              "value": "second",
+              "label": "Secundary video mobile"
+            }
+          ],
+          "default": "main",
+          "label": "?"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    },
+    {
+      "type": "image-left--video-right",
+      "name": "image-left video-right",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image1_m",
+          "label": "Image mobile"
+        },
+        {
+          "type": "header",
+          "content": "Video secundary"
+        },
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video secundary mp4"
+        },
+        {
+          "type": "url",
+          "id": "video_m",
+          "label": "Video secundary mp4 mobile"
+        },
+        {
+          "type": "header",
+          "content": "What image or video show in mobile?"
+        },
+        {
+          "type": "select",
+          "id": "image_mobile",
+          "options": [
+            {
+              "value": "main",
+              "label": "Main image mobile"
+            },
+            {
+              "value": "second",
+              "label": "Secundary video mobile"
+            }
+          ],
+          "default": "main",
+          "label": "?"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    },
+    {
+      "type": "video-left--image-right",
+      "name": "video-left image-right",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Video"
+        },
+        {
+          "type": "url",
+          "id": "video_main",
+          "label": "Video mp4"
+        },
+         {
+          "type": "url",
+          "id": "video_main_m",
+          "label": "Video mobile mp4"
+        },
+        {
+          "type": "header",
+          "content": "Image secundary"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2",
+          "label": "Image secundary"
+        },
+        {
+          "type": "image_picker",
+          "id": "image2_m",
+          "label": "Image secundary mobile"
+        },
+        {
+          "type": "header",
+          "content": "What image or video show in mobile?"
+        },
+        {
+          "type": "select",
+          "id": "image_mobile",
+          "options": [
+            {
+              "value": "main",
+              "label": "Main video mobile"
+            },
+            {
+              "value": "second",
+              "label": "Secundary image mobile"
+            }
+          ],
+          "default": "main",
+          "label": "?"
+        },
+        {
+          "type": "header",
+          "content": "Overlay"
+        },
+        {
+          "type": "color",
+          "id": "overlay_color",
+          "label": "Overlay color",
+          "default": "#000"
+        },
+        {
+          "type": "range",
+          "id": "opacity",
+          "min": 0,
+          "max": 9,
+          "step": 1,
+          "unit": "%",
+          "label": "Overlay opacity (1 = 10%)",
+          "default": 2
+        },
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Text button"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link button"
+        },
+        {
+          "type": "header",
+          "content": "Content position"
+        },
+        {
+          "type": "select",
+          "id": "position",
+          "options": [
+            {
+              "value": "leftbottom",
+              "label": "Left Bottom"
+            },
+            {
+              "value": "centerbottom",
+              "label": "Center Bottom"
+            },
+            {
+              "value": "rightbottom",
+              "label": "Right Bottom"
+            },
+            {
+              "value": "centercenter",
+              "label": "Center Center"
+            }
+            
+          ],
+          "default": "leftbottom",
+          "label": "Position"
+        }
+      ]
+    }
+  ], 
+  "presets": [
+    {
+      "name": "Vertical carousel"
+    }
+  ]
+}
+{% endschema %}

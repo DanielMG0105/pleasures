@@ -1,0 +1,187 @@
+{% comment %}
+  Renders a megamenu for the header.
+
+  Usage:
+  {% render 'header-mega-menu' %}
+{% endcomment %}
+
+<nav class="header__inline-menu">
+  <ul class="list-menu list-menu--inline" role="list">
+    {%- for link in section.settings.menu.links -%}
+      <li>
+        {%- if link.links != blank -%}
+          <header-menu>
+            <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
+              <div class="mega-menu__content__overlay"></div>
+              <summary
+                id="HeaderMenu-{{ link.handle }}"
+                class="header__menu-item list-menu__item link focus-inset"
+              >
+                <span
+                  {%- if link.child_active %}
+                    class="header__active-menu-item"
+                  {% endif %}
+                >
+                  {{- link.title | escape -}}
+                </span>
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </summary>
+              <div
+                id="MegaMenu-Content-{{ forloop.index }}"
+                class="mega-menu__content color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                tabindex="-1"
+              >
+                <div class="mega-menu-header">
+                  <span>
+                    Close
+                  </span>
+                   {%- if settings.logo != blank -%}
+                      {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+                      {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+                      {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+                      {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+                      {{ settings.logo | image_url: width: 600 | image_tag:
+                        class: '',
+                        widths: widths,
+                        height: logo_height,
+                        width: settings.logo_width,
+                        alt: logo_alt,
+                        sizes: sizes,
+                        preload: true
+                      }}
+                  {%- endif -%}
+                </div>
+                <div class="mega-menu-serch-custom">
+                  <div class="template-search__search">
+
+
+                    {%- if settings.predictive_search_enabled -%}
+                      <predictive-search class="search-modal__form" data-loading-text="{{ 'accessibility.loading' | t }}">
+                    {%- else -%}
+                      <search-form class="search-modal__form">
+                    {%- endif -%}
+                    <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
+                      <div class="field">
+                        <input
+                          class="search__input field__input"
+                          id="{{ input_id }}"
+                          type="search"
+                          name="q"
+                          value="{{ search.terms | escape }}"
+                          placeholder="{{ 'general.search.search' | t }}"
+                          {%- if settings.predictive_search_enabled -%}
+                            role="combobox"
+                            aria-expanded="false"
+                            aria-owns="predictive-search-results"
+                            aria-controls="predictive-search-results"
+                            aria-haspopup="listbox"
+                            aria-autocomplete="list"
+                            autocorrect="off"
+                            autocomplete="off"
+                            autocapitalize="off"
+                            spellcheck="false"
+                          {%- endif -%}
+                        >
+                        <label class="field__label" for="{{ input_id }}">{{ 'general.search.search' | t }}</label>
+                        <input type="hidden" name="options[prefix]" value="last">
+                        <button
+                          type="reset"
+                          class="reset__button field__button{% if search.terms == blank %} hidden{% endif %}"
+                          aria-label="{{ 'general.search.reset' | t }}"
+                        >
+                          <span class="svg-wrapper">
+                            {{- 'icon-reset.svg' | inline_asset_content -}}
+                          </span>
+                        </button>
+                        <button class="search__button field__button" aria-label="{{ 'general.search.search' | t }}">
+                          <span class="svg-wrapper">
+                            {{- 'icon-search.svg' | inline_asset_content -}}
+                          </span>
+                        </button>
+                      </div>
+            
+                      {%- if settings.predictive_search_enabled -%}
+                        <div class="predictive-search predictive-search--header" tabindex="-1" data-predictive-search>
+                          {%- render 'loading-spinner', class: 'predictive-search__loading-state' -%}
+                        </div>
+            
+                        <span class="predictive-search-status visually-hidden" role="status" aria-hidden="true"></span>
+                      {%- endif -%}
+                    </form>
+                    {%- if settings.predictive_search_enabled -%}
+                      </predictive-search>
+                    {%- else -%}
+                      </search-form>
+                    {%- endif -%}
+                    
+                  </div>
+                </div>
+                <div class="mega-menu__content__title">{{- link.title | escape -}}</div>
+                <ul
+                  class="mega-menu__list page-width{% if link.levels == 1 %} mega-menu__list--condensed{% endif %} 444444444444444"
+                  role="list"
+                >
+                  {%- for childlink in link.links -%}
+                    <li {% if childlink.title == "BLACK FRIDAY" %}class="discount-red"{% endif %}>
+                      <a
+                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                        href="{{ childlink.url }}"
+                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %} {%- if childlink.links != blank -%} prevent-default-link{% endif %}"
+                        {% if childlink.current %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ childlink.title | escape }}
+                      </a>
+                      {%- if childlink.links != blank -%}
+                        <span class="more-mega-menu">
+                          <span></span>
+                          <span></span>
+                        </span>
+                      {%- endif -%}
+                      {%- if childlink.links != blank -%}
+                        <ul class="list-unstyled list-unstyled-second" role="list">
+                          {%- for grandchildlink in childlink.links -%}
+                            <li>
+                              <a
+                                id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
+                                href="{{ grandchildlink.url }}"
+                                class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
+                                {% if grandchildlink.current %}
+                                  aria-current="page"
+                                {% endif %}
+                              >
+                                {{ grandchildlink.title | escape }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </details>
+          </header-menu>
+        {%- else -%}
+          <a
+            id="HeaderMenu-{{ link.handle }}"
+            href="{{ link.url }}"
+            class="header__menu-item list-menu__item link link--text focus-inset"
+            {% if link.current %}
+              aria-current="page"
+            {% endif %}
+          >
+            <span
+              {%- if link.current %}
+                class="header__active-menu-item"
+              {% endif %}
+            >
+              {{- link.title | escape -}}
+            </span>
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+</nav>

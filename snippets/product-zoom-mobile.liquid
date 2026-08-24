@@ -1,0 +1,8 @@
+<div class="product-zoom-mobile">
+  <span>Close</span>
+  {% for image in product.media %}
+    <div id="image-id-{{ forloop.index }}">
+      <img class="custom-image-collection  {%- if product.available == false -%} soldoutNO{%- endif%}"  src="{{ image | image_url: width: 800, height: 1000, crop: "center" }}" alt="{{ image.alt | escape }}" width="" >
+    </div>
+  {% endfor %}
+</div>
