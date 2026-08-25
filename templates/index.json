@@ -209,6 +209,7 @@
       "blocks": {
         "1_image_zq4EUn": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/F26.DROP1.DESKTOP.jpg",
             "image1_m": "shopify://shop_images/F26.DROP1.MOBILE.jpg",
@@ -235,6 +236,20 @@
             "position": "leftbottom"
           }
         },
+        "1_image_xYzKPR": {
+          "type": "1-image",
+          "settings": {
+            "image1": "shopify://shop_images/Artboard_1_1a1b8d12-fe70-4daa-9f99-8aa6cb061a76.jpg",
+            "image1_m": "shopify://shop_images/Artboard_1_9x16_ef815a1d-8875-4d6b-91bc-c627f163663a.jpg",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "TALKING HEADS x PLEASURES",
+            "description": "SAME AS IT EVER WAS",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/talking-heads",
+            "position": "leftbottom"
+          }
+        },
         "1_image_FfANpm": {
           "type": "1-image",
           "disabled": true,
@@ -248,20 +263,6 @@
             "button_text": "SHOP NOW",
             "link": "shopify://collections/summer-26",
             "position": "centerbottom"
-          }
-        },
-        "1_image_xYzKPR": {
-          "type": "1-image",
-          "settings": {
-            "image1": "shopify://shop_images/Artboard_1_1a1b8d12-fe70-4daa-9f99-8aa6cb061a76.jpg",
-            "image1_m": "shopify://shop_images/Artboard_1_9x16_ef815a1d-8875-4d6b-91bc-c627f163663a.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "TALKING HEADS x PLEASURES",
-            "description": "SAME AS IT EVER WAS",
-            "button_text": "AVAILABLE NOW",
-            "link": "shopify://collections/talking-heads",
-            "position": "leftbottom"
           }
         },
         "1_image_bweAKf": {
@@ -358,8 +359,8 @@
       "block_order": [
         "1_image_zq4EUn",
         "1_image_HqJicz",
-        "1_image_FfANpm",
         "1_image_xYzKPR",
+        "1_image_FfANpm",
         "1_image_bweAKf",
         "1_image_R3YBFD",
         "1_video_Xb8FUD",
