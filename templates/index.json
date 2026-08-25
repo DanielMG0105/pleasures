@@ -28,6 +28,7 @@
         },
         "1_image_hkMHxG": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/F26.DROP1.DESKTOP.jpg",
             "image1_m": "shopify://shop_images/F26.DROP1.MOBILE.jpg",
@@ -209,7 +210,6 @@
       "blocks": {
         "1_image_zq4EUn": {
           "type": "1-image",
-          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/F26.DROP1.DESKTOP.jpg",
             "image1_m": "shopify://shop_images/F26.DROP1.MOBILE.jpg",
