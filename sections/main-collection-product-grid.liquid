@@ -36,6 +36,38 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% if template.suffix == 'collab-collection' %}
+    @media screen and (min-width: 990px) {
+      .collection--collab-secondary-hover .collection-product-slider-swiper .swiper-wrapper {
+        display: block;
+        transform: none !important;
+      }
+
+      .collection--collab-secondary-hover .collection-product-slider-swiper .swiper-slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--duration-long) ease;
+      }
+
+      .collection--collab-secondary-hover .collection-product-slider-swiper .swiper-slide:first-child {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .collection--collab-secondary-hover .product-card-wrapper:hover .swiper-slide:first-child:not(:only-child) {
+        opacity: 0;
+      }
+
+      .collection--collab-secondary-hover .product-card-wrapper:hover .swiper-slide:nth-child(2) {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  {% endif %}
 {%- endstyle -%}
 
 
@@ -161,7 +193,7 @@
           </div>
         {%- else -%}
           <div
-            class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+            class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}{% if template.suffix == 'collab-collection' %} collection--collab-secondary-hover{% endif %}"
           >
             <div class="loading-overlay gradient"></div>
             <ul
