@@ -36,6 +36,38 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  {% if template.name == 'index' %}
+    @media screen and (min-width: 990px) {
+      #collection-{{ section.id }} .collection-product-slider-swiper .swiper-wrapper {
+        display: block;
+        transform: none !important;
+      }
+
+      #collection-{{ section.id }} .collection-product-slider-swiper .swiper-slide {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--duration-long) ease;
+      }
+
+      #collection-{{ section.id }} .collection-product-slider-swiper .swiper-slide:first-child {
+        position: relative;
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      #collection-{{ section.id }} .product-card-wrapper:hover .swiper-slide:first-child:not(:only-child) {
+        opacity: 0;
+      }
+
+      #collection-{{ section.id }} .product-card-wrapper:hover .swiper-slide:nth-child(2) {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  {% endif %}
 {%- endstyle -%}
 
 {%- liquid
