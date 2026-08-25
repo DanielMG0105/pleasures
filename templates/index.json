@@ -42,6 +42,7 @@
         },
         "1_image_kMY3Gj": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/PRIMUSWEB.01.jpg",
             "image1_m": "shopify://shop_images/PRIMUSWEB.02.jpg",
@@ -56,6 +57,7 @@
         },
         "1_image_QCQ4eP": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/worldcup.desktop.jpg",
             "image1_m": "shopify://shop_images/SUMMER26.LOOKBOOK.30_5dd1f494-e342-445a-bcee-344f5261a850.jpg",
@@ -70,6 +72,7 @@
         },
         "1_image_RHYYF8": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/Artboard_1_1a1b8d12-fe70-4daa-9f99-8aa6cb061a76.jpg",
             "image1_m": "shopify://shop_images/Artboard_1_9x16_ef815a1d-8875-4d6b-91bc-c627f163663a.jpg",
@@ -206,7 +209,6 @@
       "blocks": {
         "1_image_zq4EUn": {
           "type": "1-image",
-          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/F26.DROP1.DESKTOP.jpg",
             "image1_m": "shopify://shop_images/F26.DROP1.MOBILE.jpg",
@@ -235,6 +237,7 @@
         },
         "1_image_FfANpm": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/worldcup.desktop.jpg",
             "image1_m": "shopify://shop_images/SUMMER26.LOOKBOOK.30_5dd1f494-e342-445a-bcee-344f5261a850.jpg",
