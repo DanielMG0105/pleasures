@@ -62,10 +62,6 @@
     color: #fff;
   }
 
-  .header__icon--account account-icon{
-    display: none;
-  }
-
   .header__icon--cart .svg-wrapper{
     display: none;
   }
@@ -399,7 +395,7 @@
       </div>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
 
-      {%- if shop.customer_accounts_enabled and false -%}
+      {%- if shop.customer_accounts_enabled -%}
         <a
           href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
           class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hideNO{% endif %}"
