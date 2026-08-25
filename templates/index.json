@@ -222,20 +222,6 @@
             "position": "leftbottom"
           }
         },
-        "1_image_HqJicz": {
-          "type": "1-image",
-          "settings": {
-            "image1": "shopify://shop_images/PRIMUSWEB.01.jpg",
-            "image1_m": "shopify://shop_images/PRIMUSWEB.02.jpg",
-            "overlay_color": "#000000",
-            "opacity": 3,
-            "title": "PRIMUS x PLEASURES",
-            "description": "BASSLINE HALLUCINATIONS",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/primus",
-            "position": "leftbottom"
-          }
-        },
         "1_image_xYzKPR": {
           "type": "1-image",
           "settings": {
@@ -247,6 +233,21 @@
             "description": "SAME AS IT EVER WAS",
             "button_text": "AVAILABLE NOW",
             "link": "shopify://collections/talking-heads",
+            "position": "leftbottom"
+          }
+        },
+        "1_image_HqJicz": {
+          "type": "1-image",
+          "disabled": true,
+          "settings": {
+            "image1": "shopify://shop_images/PRIMUSWEB.01.jpg",
+            "image1_m": "shopify://shop_images/PRIMUSWEB.02.jpg",
+            "overlay_color": "#000000",
+            "opacity": 3,
+            "title": "PRIMUS x PLEASURES",
+            "description": "BASSLINE HALLUCINATIONS",
+            "button_text": "SHOP NOW",
+            "link": "shopify://collections/primus",
             "position": "leftbottom"
           }
         },
@@ -358,8 +359,8 @@
       },
       "block_order": [
         "1_image_zq4EUn",
-        "1_image_HqJicz",
         "1_image_xYzKPR",
+        "1_image_HqJicz",
         "1_image_FfANpm",
         "1_image_bweAKf",
         "1_image_R3YBFD",
