@@ -650,7 +650,7 @@ body.article .article-template .article-template__content p{
   .header__icon--account > span{
     display: none !important;
   }
-  .header__icon--account .account-icon {
+  .header__icon--account account-icon {
     display:block;
   }
   .icon-serch-custom-with-text > svg{
