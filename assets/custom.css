@@ -647,7 +647,7 @@ body.article .article-template .article-template__content p{
     gap: 10px;
   }
   .icon-serch-custom-with-text__text,
-  .header__icon header__icon--account.link focus-inset.small-hideNO > span{
+  .header__icon.header__icon--account.link.focus-inset.small-hideNO > span{
     display: none !important;
   }
   .header__icon--account account-icon {
