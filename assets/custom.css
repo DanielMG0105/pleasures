@@ -652,7 +652,7 @@ body.article .article-template .article-template__content p{
   }
   .header__icons > a.header__icon--account > account-icon {
     display:block;
-    margin-bottom:-3px;
+    margin-bottom:-4px;
   }
   .header__icons > a.header__icon--account > account-icon svg{
     height: 1.8rem !important;
