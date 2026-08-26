@@ -650,8 +650,13 @@ body.article .article-template .article-template__content p{
   .header__icon--account > span{
     display: none !important;
   }
-  .header__icon--account account-icon {
+  .header__icons > a.header__icon--account > account-icon {
     display:block;
+   
+  }
+  .header__icons > a.header__icon--account > account-icon svg{
+    height: 1.8rem !important;
+    width: 1.8rem !important;
   }
   .icon-serch-custom-with-text > svg{
     display: block !important;
