@@ -648,6 +648,7 @@ body.article .article-template .article-template__content p{
   }
   .icon-serch-custom-with-text__text{
     display: none !important;
+    color:red;
   }
   .icon-serch-custom-with-text > svg{
     display: block !important;
