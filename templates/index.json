@@ -40,11 +40,26 @@
             "link": "shopify://collections/fall-26",
             "position": "leftbottom"
           }
+        },
+        "1_image_D6NyEw": {
+          "type": "1-image",
+          "settings": {
+            "image1": "shopify://shop_images/F26.UMBRO.WEB.1.jpg",
+            "image1_m": "shopify://shop_images/F26.UMBRO.MOBILE.2.jpg",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "UMBRO by PLEASURES",
+            "description": "Capsule Collection",
+            "button_text": "COMING SOON",
+            "link": "",
+            "position": "leftbottom"
+          }
         }
       },
       "block_order": [
         "1_image_BVTfzK",
-        "1_image_hkMHxG"
+        "1_image_hkMHxG",
+        "1_image_D6NyEw"
       ],
       "settings": {}
     },
