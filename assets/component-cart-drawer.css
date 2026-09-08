@@ -339,6 +339,12 @@ cart-drawer-items {
   min-width: 0;
 }
 
+/* The cart page lays the CTAs out as a row on desktop (component-cart.css);
+   inside the drawer we always want a single stacked column. */
+.drawer__footer .cart__ctas {
+  display: block !important;
+}
+
 .drawer__footer .cart__dynamic-checkout-buttons {
   margin-top: 1rem;
   overflow: hidden;
