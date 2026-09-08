@@ -332,43 +332,57 @@ cart-drawer-items {
   max-width: none;
 }
 
+.drawer__footer .cart__ctas,
 .drawer__footer .cart__dynamic-checkout-buttons {
+  width: 100%;
   max-width: 100%;
+  min-width: 0;
 }
 
+.drawer__footer .cart__dynamic-checkout-buttons {
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+/* Constrain every descendant of the accelerated checkout markup so the
+   payment buttons / iframes never push the drawer wider than the viewport. */
+.drawer__footer .cart__dynamic-checkout-buttons * {
+  max-width: 100% !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Current Shopify markup: <div data-shopify-buttoncontainer> with button wrappers */
+.drawer__footer [data-shopify-buttoncontainer] {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.drawer__footer [data-shopify-buttoncontainer] > * {
+  flex: 1 1 100% !important;
+  width: 100% !important;
+}
+
+/* Legacy list markup fallback */
 .drawer__footer #dynamic-checkout-cart ul {
   flex-wrap: wrap !important;
-  flex-direction: row !important;
-  margin: 0.5rem -0.5rem 0 0 !important;
-  gap: 0.5rem;
-}
-
-.drawer__footer [data-shopify-buttoncontainer] {
-  justify-content: flex-start;
+  flex-direction: column !important;
+  gap: 0.8rem;
+  margin: 0.5rem 0 0 !important;
+  padding: 0;
 }
 
 .drawer__footer #dynamic-checkout-cart ul > li {
-  flex-basis: calc(50% - 0.5rem) !important;
-  margin: 0 !important;
-}
-
-.drawer__footer #dynamic-checkout-cart ul > li:only-child {
   flex-basis: 100% !important;
-  margin-right: 0.5rem !important;
-}
-
-@media screen and (min-width: 750px) {
-  .drawer__footer #dynamic-checkout-cart ul > li {
-    flex-basis: calc(100% / 3 - 0.5rem) !important;
-    margin: 0 !important;
-  }
-
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(2) ~ li,
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4),
-  .drawer__footer #dynamic-checkout-cart ul > li:first-child:nth-last-child(4) ~ li {
-    flex-basis: calc(50% - 0.5rem) !important;
-  }
+  width: 100% !important;
+  margin: 0 !important;
 }
 
 cart-drawer-items::-webkit-scrollbar {
