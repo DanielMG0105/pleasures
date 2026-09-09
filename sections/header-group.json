@@ -17,15 +17,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "20% OFF HOME GOODS AND ACCESSORIES",
-            "link": "shopify://collections/accessories"
+            "text": "FREE US SHIPPING OVER $200",
+            "link": ""
           }
         }
       },
       "block_order": [
         "announcement-bar-0"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "show_line_separator": true,
