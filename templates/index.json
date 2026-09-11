@@ -32,6 +32,35 @@
       ],
       "settings": {}
     },
+    "featured_collection_Bm6y9Y": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fall-26",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "vertical_carousel_AkWkWz": {
       "type": "vertical-carousel",
       "blocks": {
@@ -106,35 +135,6 @@
         "1_image_B8bhAi"
       ],
       "settings": {}
-    },
-    "featured_collection_Bm6y9Y": {
-      "type": "featured-collection",
-      "name": "t:sections.featured-collection.presets.name",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "dead-kennedys",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": true,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": true,
-        "color_scheme": "scheme-4",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     },
     "vertical_carousel_YwgidF": {
       "type": "vertical-carousel",
@@ -369,10 +369,10 @@
   },
   "order": [
     "vertical_carousel_HjetwX",
+    "featured_collection_Bm6y9Y",
     "vertical_carousel_AkWkWz",
     "featured_collection_8PGPGa",
     "vertical_carousel_RHkzGk",
-    "featured_collection_Bm6y9Y",
     "vertical_carousel_YwgidF",
     "vertical_carousel_6gDbAR",
     "vertical_carousel_WVGrh8",
