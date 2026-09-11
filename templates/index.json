@@ -55,6 +55,35 @@
       ],
       "settings": {}
     },
+    "featured_collection_8PGPGa": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "UMBRO by PLEASURES",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "umbro",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "vertical_carousel_RHkzGk": {
       "type": "vertical-carousel",
       "blocks": {
@@ -341,6 +370,7 @@
   "order": [
     "vertical_carousel_HjetwX",
     "vertical_carousel_AkWkWz",
+    "featured_collection_8PGPGa",
     "vertical_carousel_RHkzGk",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_YwgidF",
