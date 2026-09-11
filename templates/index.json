@@ -12,6 +12,20 @@
     "vertical_carousel_HjetwX": {
       "type": "vertical-carousel",
       "blocks": {
+        "1_image_QiLzbP": {
+          "type": "1-image",
+          "settings": {
+            "image1": "shopify://shop_images/F26.D4.WEB.jpg",
+            "image1_m": "shopify://shop_images/F26.UMBRO.MOBILE.2_acda9cc4-3c7d-4890-ae09-6b7e7e972df2.jpg",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "FALL 26 DROP 4",
+            "description": "WE MET IN PURGATORY",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
+            "position": "leftbottom"
+          }
+        },
         "1_image_D6NyEw": {
           "type": "1-image",
           "settings": {
@@ -28,6 +42,7 @@
         }
       },
       "block_order": [
+        "1_image_QiLzbP",
         "1_image_D6NyEw"
       ],
       "settings": {}
