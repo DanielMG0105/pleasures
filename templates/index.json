@@ -25,8 +25,17 @@
             "link": "shopify://collections/new-arrivals",
             "position": "centerbottom"
           }
-        },
-        "1_image_D6NyEw": {
+        }
+      },
+      "block_order": [
+        "1_image_QiLzbP"
+      ],
+      "settings": {}
+    },
+    "vertical_carousel_AkWkWz": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "1_image_KB6hJk": {
           "type": "1-image",
           "settings": {
             "image1": "shopify://shop_images/F26.UMBRO.WEB.1.jpg",
@@ -42,8 +51,7 @@
         }
       },
       "block_order": [
-        "1_image_QiLzbP",
-        "1_image_D6NyEw"
+        "1_image_KB6hJk"
       ],
       "settings": {}
     },
@@ -332,6 +340,7 @@
   },
   "order": [
     "vertical_carousel_HjetwX",
+    "vertical_carousel_AkWkWz",
     "vertical_carousel_RHkzGk",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_YwgidF",
