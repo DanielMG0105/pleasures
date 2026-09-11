@@ -146,10 +146,10 @@
             "image1_m": "shopify://shop_images/F26.DROP1.MOBILE.jpg",
             "overlay_color": "#000000",
             "opacity": 3,
-            "title": "FALL 26 DROP 1",
+            "title": "FALL 26 - HONG KONG",
             "description": "SOMEWHERE IN BETWEEN",
             "button_text": "Available Now",
-            "link": "shopify://collections/new-arrivals",
+            "link": "shopify://collections/fall-26",
             "position": "leftbottom"
           }
         }
