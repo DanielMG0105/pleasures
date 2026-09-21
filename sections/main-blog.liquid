@@ -2,6 +2,8 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
+<script src="{{ 'meetanshi-infinite-scroll.js' | asset_url }}"></script>
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -22,7 +24,11 @@
       {{ blog.title | escape }}
     </h1>-->
 
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div
+      class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}"
+      id="blog-articles-grid"
+      data-id="{{ section.id }}"
+    >
       {%- for article in blog.articles -%}
         <div
           class="blog-articles__article article{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -49,6 +55,25 @@
     {%- endif -%}
   </div>
 {%- endpaginate -%}
+
+<div id="loader" style="display: none; width: 100%; text-align: center;">
+  <img
+    src="https://cdn.shopify.com/s/files/1/0879/6548/files/Iphone-spinner-2.webp?v=1736908812"
+    style="margin: 0 auto;"
+    width="50px"
+    height="50px"
+    alt=""
+  >
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new MeetAjaxForProduct({
+      container: '#blog-articles-grid',
+      pagination: '.meet_infinite_next',
+    });
+  });
+</script>
 
 {% schema %}
 {
