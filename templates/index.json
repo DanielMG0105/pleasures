@@ -9,6 +9,31 @@
  */
 {
   "sections": {
+    "vertical_carousel_9QtbYi": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "1_image_GxzakH": {
+          "type": "1-image",
+          "disabled": true,
+          "settings": {
+            "image1": "shopify://shop_images/F26D5.WEB.01.jpg",
+            "image1_m": "shopify://shop_images/F26D5.MOBILE.01.jpg",
+            "overlay_color": "#000",
+            "opacity": 2,
+            "title": "FALL 26 - FINAL DROP",
+            "description": "SOMEWHERE BETWEEN",
+            "button_text": "AVAILABLE NOW",
+            "link": "",
+            "position": "centercenter"
+          }
+        }
+      },
+      "block_order": [
+        "1_image_GxzakH"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
+    },
     "vertical_carousel_HjetwX": {
       "type": "vertical-carousel",
       "blocks": {
@@ -212,139 +237,11 @@
             "link": "shopify://collections/talking-heads",
             "position": "leftbottom"
           }
-        },
-        "1_image_aDxQBU": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/PRIMUSWEB.01.jpg",
-            "image1_m": "shopify://shop_images/PRIMUSWEB.02.jpg",
-            "overlay_color": "#000000",
-            "opacity": 3,
-            "title": "PRIMUS x PLEASURES",
-            "description": "BASSLINE HALLUCINATIONS",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/primus",
-            "position": "leftbottom"
-          }
-        },
-        "1_image_rpkCDj": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/worldcup.desktop.jpg",
-            "image1_m": "shopify://shop_images/SUMMER26.LOOKBOOK.30_5dd1f494-e342-445a-bcee-344f5261a850.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "SUMMER 26",
-            "description": "PLEASURES WORLD CUP 2026, SHOT IN CDMX",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/summer-26",
-            "position": "centerbottom"
-          }
-        },
-        "1_image_VUJeFG": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/Artboard_1_c96fd15b-5bb1-438f-a61e-e2ccf8e77a1f.jpg",
-            "image1_m": "shopify://shop_images/Artboard_1_9x16_d90f383e-e6e5-4fd1-b5e8-526545f88ab0.jpg",
-            "overlay_color": "#000000",
-            "opacity": 1,
-            "title": "SUMMER 26",
-            "description": "Shot in Mexico City",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/summer-26",
-            "position": "leftbottom"
-          }
-        },
-        "1_image_Hj83dM": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/PLSRS.OF.WEBFILES.02.jpg",
-            "image1_m": "shopify://shop_images/OF.MOBILE.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "PLEASURES x ONLYFANS",
-            "description": "Pure Adrenaline",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/new-arrivals",
-            "position": "leftbottom"
-          }
-        },
-        "1_video_XcNEzq": {
-          "type": "1-video",
-          "disabled": true,
-          "settings": {
-            "video_main": "https://cdn.shopify.com/videos/c/o/v/1f8da06268954cc1936d0bd99c0777c1.mp4",
-            "video_main_m": "https://cdn.shopify.com/videos/c/o/v/bfd5af373ff84b57ad784f758e8545df.mp4",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "ALTRA x PLEASURES",
-            "description": "Where Motion Becomes Art",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/altra",
-            "position": "leftbottom"
-          }
-        },
-        "1_image_wLHh6K": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/SP26D1.DESK.jpg",
-            "image1_m": "shopify://shop_images/SP26D1.MOBILE.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "SPRING 26",
-            "description": "Strange Ways Everyday",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/spring-26",
-            "position": "centerbottom"
-          }
-        },
-        "1_video_GnqGRG": {
-          "type": "1-video",
-          "disabled": true,
-          "settings": {
-            "video_main": "https://cdn.shopify.com/videos/c/o/v/427da206ed424d92857226201538bba8.mp4",
-            "video_main_m": "https://cdn.shopify.com/videos/c/o/v/df3eb37e25794db19356213080aeb9c2.mp4",
-            "overlay_color": "#000000",
-            "opacity": 1,
-            "title": "NOTHING TO DECLARE",
-            "description": "TOPOLOGIE x PLEASURES capsule collection",
-            "button_text": "Shop now",
-            "link": "shopify://collections/topologie",
-            "position": "centerbottom"
-          }
-        },
-        "1_image_HacaMy": {
-          "type": "1-image",
-          "disabled": true,
-          "settings": {
-            "image1": "shopify://shop_images/SP25D1.03_d5c56d7c-c099-4475-8fd2-58614f649020.jpg",
-            "image1_m": "shopify://shop_images/Artboard_1_9x16_61fd6946-55d9-4d2d-b0bf-590ecc234ca6.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "SPERRY x PLEASURES",
-            "description": "Off the boat and into the wild",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/sperry",
-            "position": "centercenter"
-          }
         }
       },
       "block_order": [
         "1_image_YEmWN3",
-        "1_image_kCmhk6",
-        "1_image_aDxQBU",
-        "1_image_rpkCDj",
-        "1_image_VUJeFG",
-        "1_image_Hj83dM",
-        "1_video_XcNEzq",
-        "1_image_wLHh6K",
-        "1_video_GnqGRG",
-        "1_image_HacaMy"
+        "1_image_kCmhk6"
       ],
       "disabled": true,
       "settings": {}
@@ -368,6 +265,7 @@
     }
   },
   "order": [
+    "vertical_carousel_9QtbYi",
     "vertical_carousel_HjetwX",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_AkWkWz",
