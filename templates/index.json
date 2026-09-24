@@ -14,7 +14,6 @@
       "blocks": {
         "1_image_GxzakH": {
           "type": "1-image",
-          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/F26D5.WEB.01.jpg",
             "image1_m": "shopify://shop_images/F26D5.MOBILE.01.jpg",
@@ -31,6 +30,7 @@
       "block_order": [
         "1_image_GxzakH"
       ],
+      "disabled": true,
       "name": "Vertical carousel",
       "settings": {}
     },
