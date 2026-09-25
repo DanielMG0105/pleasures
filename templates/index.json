@@ -23,7 +23,7 @@
             "description": "SOMEWHERE IN BETWEEN",
             "button_text": "AVAILABLE NOW",
             "link": "shopify://collections/new-arrivals",
-            "position": "rightbottom"
+            "position": "centerbottom"
           }
         }
       },
