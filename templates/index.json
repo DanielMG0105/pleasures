@@ -20,8 +20,8 @@
             "overlay_color": "#000",
             "opacity": 2,
             "title": "FALL 26 - FINAL DROP",
-            "description": "SOMEWHERE BETWEEN",
-            "button_text": "AVAILABLE NOW",
+            "description": "SOMEWHERE IN BETWEEN",
+            "button_text": "NEW ARRIVALS",
             "link": "",
             "position": "centercenter"
           }
@@ -30,31 +30,7 @@
       "block_order": [
         "1_image_GxzakH"
       ],
-      "disabled": true,
       "name": "Vertical carousel",
-      "settings": {}
-    },
-    "vertical_carousel_HjetwX": {
-      "type": "vertical-carousel",
-      "blocks": {
-        "1_image_QiLzbP": {
-          "type": "1-image",
-          "settings": {
-            "image1": "shopify://shop_images/F26.D4.WEB2.jpg",
-            "image1_m": "shopify://shop_images/F26.UMBRO.MOBILE.2_acda9cc4-3c7d-4890-ae09-6b7e7e972df2.jpg",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "FALL 26 DROP 4",
-            "description": "WE MET IN PURGATORY",
-            "button_text": "AVAILABLE NOW",
-            "link": "shopify://collections/new-arrivals",
-            "position": "centerbottom"
-          }
-        }
-      },
-      "block_order": [
-        "1_image_QiLzbP"
-      ],
       "settings": {}
     },
     "featured_collection_Bm6y9Y": {
@@ -161,6 +137,29 @@
       ],
       "settings": {}
     },
+    "vertical_carousel_HjetwX": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "1_image_QiLzbP": {
+          "type": "1-image",
+          "settings": {
+            "image1": "shopify://shop_images/F26.D4.WEB2.jpg",
+            "image1_m": "shopify://shop_images/F26.UMBRO.MOBILE.2_acda9cc4-3c7d-4890-ae09-6b7e7e972df2.jpg",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "FALL 26 - HONG KONG",
+            "description": "WE MET IN PURGATORY",
+            "button_text": "SHOP NOW",
+            "link": "shopify://collections/fall-26",
+            "position": "centerbottom"
+          }
+        }
+      },
+      "block_order": [
+        "1_image_QiLzbP"
+      ],
+      "settings": {}
+    },
     "vertical_carousel_YwgidF": {
       "type": "vertical-carousel",
       "blocks": {
@@ -182,6 +181,7 @@
       "block_order": [
         "1_image_zq4EUn"
       ],
+      "disabled": true,
       "settings": {}
     },
     "vertical_carousel_6gDbAR": {
@@ -266,11 +266,11 @@
   },
   "order": [
     "vertical_carousel_9QtbYi",
-    "vertical_carousel_HjetwX",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_AkWkWz",
     "featured_collection_8PGPGa",
     "vertical_carousel_RHkzGk",
+    "vertical_carousel_HjetwX",
     "vertical_carousel_YwgidF",
     "vertical_carousel_6gDbAR",
     "vertical_carousel_WVGrh8",
