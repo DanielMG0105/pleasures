@@ -21,8 +21,8 @@
             "opacity": 2,
             "title": "FALL 26 - FINAL DROP",
             "description": "SOMEWHERE IN BETWEEN",
-            "button_text": "NEW ARRIVALS",
-            "link": "",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
             "position": "centercenter"
           }
         }
