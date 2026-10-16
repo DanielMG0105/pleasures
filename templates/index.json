@@ -15,6 +15,30 @@
         "1_image_GxzakH": {
           "type": "1-image",
           "settings": {
+            "image1": "shopify://shop_images/SNEAKERPOLITICSWEB.01.jpg",
+            "image1_m": "shopify://shop_images/SNEAKERPOLITICSMOBILE.01.jpg",
+            "overlay_color": "#000",
+            "opacity": 3,
+            "title": "Politics x Pleasures",
+            "description": "FANTASY FOOTBALL",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
+            "position": "leftbottom"
+          }
+        }
+      },
+      "block_order": [
+        "1_image_GxzakH"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
+    },
+    "vertical_carousel_VJCkzJ": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "1_image_4naGnw": {
+          "type": "1-image",
+          "settings": {
             "image1": "shopify://shop_images/F26D5.WEB.01.jpg",
             "image1_m": "shopify://shop_images/F26D5.MOBILE.01.jpg",
             "overlay_color": "#000",
@@ -22,13 +46,13 @@
             "title": "FALL 26 - FINAL DROP",
             "description": "SOMEWHERE IN BETWEEN",
             "button_text": "AVAILABLE NOW",
-            "link": "shopify://collections/new-arrivals",
+            "link": "shopify://collections/fall-26",
             "position": "centerbottom"
           }
         }
       },
       "block_order": [
-        "1_image_GxzakH"
+        "1_image_4naGnw"
       ],
       "name": "Vertical carousel",
       "settings": {}
@@ -149,8 +173,8 @@
             "opacity": 2,
             "title": "FALL 26 - HONG KONG",
             "description": "WE MET IN PURGATORY",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/fall-26",
+            "button_text": "LOOK BOOK",
+            "link": "shopify://blogs/lookbooks/fall-2026",
             "position": "centerbottom"
           }
         }
@@ -266,6 +290,7 @@
   },
   "order": [
     "vertical_carousel_9QtbYi",
+    "vertical_carousel_VJCkzJ",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_AkWkWz",
     "featured_collection_8PGPGa",
