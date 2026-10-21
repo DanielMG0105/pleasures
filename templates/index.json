@@ -33,33 +33,6 @@
       "name": "Vertical carousel",
       "settings": {}
     },
-    "vertical_carousel_cGdNtW": {
-      "type": "vertical-carousel",
-      "blocks": {
-        "video_left_image_right_hiDkTd": {
-          "type": "video-left--image-right",
-          "settings": {
-            "video_main": "https://cdn.shopify.com/videos/c/o/v/56d970c060644c04af4faf4382315999.mp4",
-            "video_main_m": "https://cdn.shopify.com/videos/c/o/v/56d970c060644c04af4faf4382315999.mp4",
-            "image2": "shopify://shop_images/Untitled-1.jpg",
-            "image2_m": "shopify://shop_images/Untitled-1.jpg",
-            "image_mobile": "main",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "PLEASURES & FAMOUS",
-            "description": "LIMITED COLLECTION",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/new-arrivals",
-            "position": "leftbottom"
-          }
-        }
-      },
-      "block_order": [
-        "video_left_image_right_hiDkTd"
-      ],
-      "name": "Vertical carousel",
-      "settings": {}
-    },
     "vertical_carousel_VJCkzJ": {
       "type": "vertical-carousel",
       "blocks": {
@@ -112,6 +85,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "vertical_carousel_cGdNtW": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "video_left_image_right_hiDkTd": {
+          "type": "video-left--image-right",
+          "settings": {
+            "video_main": "https://cdn.shopify.com/videos/c/o/v/56d970c060644c04af4faf4382315999.mp4",
+            "video_main_m": "https://cdn.shopify.com/videos/c/o/v/56d970c060644c04af4faf4382315999.mp4",
+            "image2": "shopify://shop_images/1_91a23932-c7fb-4145-8ca7-e54e989d5222.jpg",
+            "image2_m": "shopify://shop_images/1_91a23932-c7fb-4145-8ca7-e54e989d5222.jpg",
+            "image_mobile": "main",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "PLEASURES & FAMOUS",
+            "description": "I NEED A FREAK",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
+            "position": "centerbottom"
+          }
+        }
+      },
+      "block_order": [
+        "video_left_image_right_hiDkTd"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
     },
     "vertical_carousel_AkWkWz": {
       "type": "vertical-carousel",
