@@ -9,6 +9,33 @@
  */
 {
   "sections": {
+    "vertical_carousel_UbrPqh": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "2_images_Pe9LYb": {
+          "type": "2-images",
+          "settings": {
+            "image1": "shopify://shop_images/H26.SIZED.06.jpg",
+            "image1_m": "shopify://shop_images/H26.SIZED.06.jpg",
+            "image2": "shopify://shop_images/H26.SIZED.11.jpg",
+            "image2_m": "shopify://shop_images/H26.SIZED.11.jpg",
+            "image_mobile": "main",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "HOLIDAY 26  DROP1",
+            "description": "SHOT IN MONTREAL",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
+            "position": "leftbottom"
+          }
+        }
+      },
+      "block_order": [
+        "2_images_Pe9LYb"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
+    },
     "vertical_carousel_cGdNtW": {
       "type": "vertical-carousel",
       "blocks": {
@@ -32,30 +59,6 @@
       },
       "block_order": [
         "video_left_image_right_hiDkTd"
-      ],
-      "name": "Vertical carousel",
-      "settings": {}
-    },
-    "vertical_carousel_9QtbYi": {
-      "type": "vertical-carousel",
-      "blocks": {
-        "1_image_GxzakH": {
-          "type": "1-image",
-          "settings": {
-            "image1": "shopify://shop_images/SNEAKERPOLITICSWEB.02.jpg",
-            "image1_m": "shopify://shop_images/SNEAKERPOLITICSMOBILE.01.jpg",
-            "overlay_color": "#000",
-            "opacity": 3,
-            "title": "Politics x Pleasures",
-            "description": "FANTASY FOOTBALL",
-            "button_text": "AVAILABLE NOW",
-            "link": "shopify://collections/new-arrivals",
-            "position": "rightbottom"
-          }
-        }
-      },
-      "block_order": [
-        "1_image_GxzakH"
       ],
       "name": "Vertical carousel",
       "settings": {}
@@ -112,6 +115,30 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "vertical_carousel_9QtbYi": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "1_image_GxzakH": {
+          "type": "1-image",
+          "settings": {
+            "image1": "shopify://shop_images/SNEAKERPOLITICSWEB.02.jpg",
+            "image1_m": "shopify://shop_images/SNEAKERPOLITICSMOBILE.01.jpg",
+            "overlay_color": "#000",
+            "opacity": 3,
+            "title": "Politics x Pleasures",
+            "description": "FANTASY FOOTBALL",
+            "button_text": "AVAILABLE NOW",
+            "link": "shopify://collections/new-arrivals",
+            "position": "rightbottom"
+          }
+        }
+      },
+      "block_order": [
+        "1_image_GxzakH"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
     },
     "vertical_carousel_AkWkWz": {
       "type": "vertical-carousel",
@@ -230,6 +257,7 @@
     }
   },
   "order": [
+    "vertical_carousel_UbrPqh",
     "vertical_carousel_cGdNtW",
     "vertical_carousel_VJCkzJ",
     "featured_collection_Bm6y9Y",
