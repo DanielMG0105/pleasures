@@ -221,15 +221,15 @@
         "1_image_QiLzbP": {
           "type": "1-image",
           "settings": {
-            "image1": "shopify://shop_images/F26.D4.WEB2.jpg",
-            "image1_m": "shopify://shop_images/F26.UMBRO.MOBILE.2_acda9cc4-3c7d-4890-ae09-6b7e7e972df2.jpg",
+            "image1": "shopify://shop_images/PLEASURES.HOLIDAY26HEADER_sized.jpg",
+            "image1_m": "shopify://shop_images/9x16.HO26.LOOKBOOK_sized.jpg",
             "overlay_color": "#000000",
             "opacity": 2,
-            "title": "FALL 26 - HONG KONG",
-            "description": "WE MET IN PURGATORY",
+            "title": "HOLIDAY 26 - MONTREAL",
+            "description": "Ciel Couvert, Overcast Sky",
             "button_text": "LOOK BOOK",
-            "link": "shopify://blogs/lookbooks/fall-2026",
-            "position": "centerbottom"
+            "link": "shopify://collections/holiday-26",
+            "position": "leftbottom"
           }
         }
       },
