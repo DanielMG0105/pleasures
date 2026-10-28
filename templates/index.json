@@ -63,6 +63,35 @@
       "name": "Vertical carousel",
       "settings": {}
     },
+    "featured_collection_fwEiX4": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "holiday-26",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": true,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": true,
+        "color_scheme": "scheme-4",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "vertical_carousel_cGdNtW": {
       "type": "vertical-carousel",
       "blocks": {
@@ -262,6 +291,7 @@
   "order": [
     "vertical_carousel_9QtbYi",
     "vertical_carousel_UbrPqh",
+    "featured_collection_fwEiX4",
     "vertical_carousel_cGdNtW",
     "vertical_carousel_VJCkzJ",
     "featured_collection_Bm6y9Y",
