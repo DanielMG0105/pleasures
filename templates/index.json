@@ -15,8 +15,8 @@
         "image_left_video_right_htc96m": {
           "type": "image-left--video-right",
           "settings": {
-            "image1": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
-            "image1_m": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
+            "image1": "shopify://shop_images/PLEASURES.VEJA.STILLIFE.02.jpg",
+            "image1_m": "shopify://shop_images/PLEASURES.VEJA.STILLIFE.02.jpg",
             "video": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
             "video_m": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
             "image_mobile": "second",
