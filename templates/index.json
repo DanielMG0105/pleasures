@@ -26,7 +26,7 @@
             "description": "",
             "button_text": "SHOP NOW",
             "link": "shopify://collections/new-arrivals",
-            "position": "centercenter"
+            "position": "centerbottom"
           }
         }
       },
