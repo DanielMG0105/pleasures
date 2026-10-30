@@ -9,47 +9,20 @@
  */
 {
   "sections": {
-    "vertical_carousel_9QtbYi": {
-      "type": "vertical-carousel",
-      "blocks": {
-        "image_left_video_right_htc96m": {
-          "type": "image-left--video-right",
-          "settings": {
-            "image1": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
-            "image1_m": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
-            "video": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
-            "video_m": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
-            "image_mobile": "second",
-            "overlay_color": "#000000",
-            "opacity": 2,
-            "title": "VEJA x PLEASURES",
-            "description": "Rooted in nature, made for the streets",
-            "button_text": "SHOP NOW",
-            "link": "shopify://products/pleasures-veja-x-pleasures-salar-alveomesh-eagle-khaki-veja26",
-            "position": "centerbottom"
-          }
-        }
-      },
-      "block_order": [
-        "image_left_video_right_htc96m"
-      ],
-      "name": "Vertical carousel",
-      "settings": {}
-    },
     "vertical_carousel_UbrPqh": {
       "type": "vertical-carousel",
       "blocks": {
         "2_images_Pe9LYb": {
           "type": "2-images",
           "settings": {
-            "image1": "shopify://shop_images/H26.SIZED.06.jpg",
-            "image1_m": "shopify://shop_images/H26.SIZED.06.jpg",
-            "image2": "shopify://shop_images/H26.SIZED.11.jpg",
-            "image2_m": "shopify://shop_images/H26.SIZED.11.jpg",
+            "image1": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.19_00fe3595-2998-4ee7-9376-1fe903a1e4f0.jpg",
+            "image1_m": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.19_00fe3595-2998-4ee7-9376-1fe903a1e4f0.jpg",
+            "image2": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.14_814179c3-7fbe-4da9-8f7a-1d7631cf80db.jpg",
+            "image2_m": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.14_814179c3-7fbe-4da9-8f7a-1d7631cf80db.jpg",
             "image_mobile": "main",
             "overlay_color": "#000000",
             "opacity": 2,
-            "title": "HOLIDAY 26  DROP 1",
+            "title": "HOLIDAY 26  DROP 2",
             "description": "SHOT IN MONTREAL",
             "button_text": "AVAILABLE NOW",
             "link": "shopify://collections/new-arrivals",
@@ -92,6 +65,33 @@
         "padding_bottom": 36
       }
     },
+    "vertical_carousel_9QtbYi": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "image_left_video_right_htc96m": {
+          "type": "image-left--video-right",
+          "settings": {
+            "image1": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
+            "image1_m": "shopify://shop_images/VEJA_AW26_VEJA_x_PLEASURE_JPEG_305.jpg",
+            "video": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
+            "video_m": "https://cdn.shopify.com/videos/c/o/v/d98d867282044c91ae3f7b8d42c0832a.mp4",
+            "image_mobile": "second",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "VEJA x PLEASURES",
+            "description": "Rooted in nature, made for the streets",
+            "button_text": "SHOP NOW",
+            "link": "shopify://products/pleasures-veja-x-pleasures-salar-alveomesh-eagle-khaki-veja26",
+            "position": "centerbottom"
+          }
+        }
+      },
+      "block_order": [
+        "image_left_video_right_htc96m"
+      ],
+      "name": "Vertical carousel",
+      "settings": {}
+    },
     "vertical_carousel_cGdNtW": {
       "type": "vertical-carousel",
       "blocks": {
@@ -129,7 +129,7 @@
             "image1_m": "shopify://shop_images/F26D5.MOBILE.01.jpg",
             "overlay_color": "#000",
             "opacity": 3,
-            "title": "FALL 26 - FINAL DROP",
+            "title": "FALL 26 -SHOT IN HONG KONG",
             "description": "SOMEWHERE IN BETWEEN",
             "button_text": "SHOP THE COLLECTION",
             "link": "shopify://collections/fall-26",
@@ -289,9 +289,9 @@
     }
   },
   "order": [
-    "vertical_carousel_9QtbYi",
     "vertical_carousel_UbrPqh",
     "featured_collection_fwEiX4",
+    "vertical_carousel_9QtbYi",
     "vertical_carousel_cGdNtW",
     "vertical_carousel_VJCkzJ",
     "featured_collection_Bm6y9Y",
