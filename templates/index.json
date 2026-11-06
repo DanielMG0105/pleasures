@@ -92,6 +92,32 @@
       "name": "Vertical carousel",
       "settings": {}
     },
+    "vertical_carousel_RHkzGk": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "2_images_7ixN9U": {
+          "type": "2-images",
+          "settings": {
+            "image1": "shopify://shop_images/DROP2.ADS.10.jpg",
+            "image1_m": "shopify://shop_images/DROP2.ADS.4x6.10.jpg",
+            "image2": "shopify://shop_images/DROP2.ADS.07.jpg",
+            "image2_m": "shopify://shop_images/DROP2.ADS.4x6.07.jpg",
+            "image_mobile": "second",
+            "overlay_color": "#000000",
+            "opacity": 2,
+            "title": "PLEASURES & THE CRANBERRIES",
+            "description": "LIMITED CAPSULE",
+            "button_text": "SHOP NOW",
+            "link": "shopify://collections/the-cranberries",
+            "position": "rightbottom"
+          }
+        }
+      },
+      "block_order": [
+        "2_images_7ixN9U"
+      ],
+      "settings": {}
+    },
     "vertical_carousel_cGdNtW": {
       "type": "vertical-carousel",
       "blocks": {
@@ -225,29 +251,6 @@
         "padding_bottom": 36
       }
     },
-    "vertical_carousel_RHkzGk": {
-      "type": "vertical-carousel",
-      "blocks": {
-        "1_image_B8bhAi": {
-          "type": "1-image",
-          "settings": {
-            "image1": "shopify://shop_images/DK.DROP.DESKTOP.jpg",
-            "image1_m": "shopify://shop_images/DK.DROP.MOBILE.jpg",
-            "overlay_color": "#000000",
-            "opacity": 1,
-            "title": "PLEASURES & DEAD KENNEDYS",
-            "description": "Destroy Efficiency",
-            "button_text": "SHOP NOW",
-            "link": "shopify://collections/dead-kennedys",
-            "position": "centerbottom"
-          }
-        }
-      },
-      "block_order": [
-        "1_image_B8bhAi"
-      ],
-      "settings": {}
-    },
     "vertical_carousel_HjetwX": {
       "type": "vertical-carousel",
       "blocks": {
@@ -293,12 +296,12 @@
     "vertical_carousel_UbrPqh",
     "featured_collection_fwEiX4",
     "vertical_carousel_9QtbYi",
+    "vertical_carousel_RHkzGk",
     "vertical_carousel_cGdNtW",
     "vertical_carousel_VJCkzJ",
     "featured_collection_Bm6y9Y",
     "vertical_carousel_AkWkWz",
     "featured_collection_8PGPGa",
-    "vertical_carousel_RHkzGk",
     "vertical_carousel_HjetwX",
     "1736979599cdb48a91"
   ]
