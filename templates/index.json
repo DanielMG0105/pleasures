@@ -15,18 +15,18 @@
         "2_images_Pe9LYb": {
           "type": "2-images",
           "settings": {
-            "image1": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.19_00fe3595-2998-4ee7-9376-1fe903a1e4f0.jpg",
-            "image1_m": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.19_00fe3595-2998-4ee7-9376-1fe903a1e4f0.jpg",
-            "image2": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.14_814179c3-7fbe-4da9-8f7a-1d7631cf80db.jpg",
-            "image2_m": "shopify://shop_images/HO26.LOOKBOOk.SELECTS.14_814179c3-7fbe-4da9-8f7a-1d7631cf80db.jpg",
-            "image_mobile": "second",
+            "image1": "shopify://shop_images/DROP3.ADS.015.jpg",
+            "image1_m": "shopify://shop_images/DROP3.MOBILE.01.jpg",
+            "image2": "shopify://shop_images/DROP3.ADS.002.jpg",
+            "image2_m": "shopify://shop_images/DROP3.ADS.002.jpg",
+            "image_mobile": "main",
             "overlay_color": "#000000",
-            "opacity": 2,
+            "opacity": 1,
             "title": "HOLIDAY 26  - SHOT IN MONTREAL",
-            "description": "DROP 2 & THE CRANBERRIES",
+            "description": "FINAL DROP",
             "button_text": "AVAILABLE NOW",
             "link": "shopify://collections/new-arrivals",
-            "position": "rightbottom"
+            "position": "centerbottom"
           }
         }
       },
