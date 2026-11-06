@@ -109,7 +109,7 @@
             "description": "LIMITED CAPSULE",
             "button_text": "SHOP NOW",
             "link": "shopify://collections/the-cranberries",
-            "position": "rightbottom"
+            "position": "centerbottom"
           }
         }
       },
