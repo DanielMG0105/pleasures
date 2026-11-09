@@ -1,6 +1,11 @@
+{%- comment %}<locksmith:4cbe>{% endcomment -%}
+  {%- include 'locksmith' -%}
+{%- comment %}</locksmith:4cbe>{% endcomment -%}
+
 <!doctype html>
 <html class="js" lang="{{ request.locale.iso_code }}">
   <head>
+{{ locksmith_initializations }}
 {% include 'booster-seo' %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,7 +43,7 @@
     </title>{% endcomment %}
 
     {% if page_description %}
-      {% comment %}<meta name="description" content="{{ page_description | escape }}">{% endcomment %}
+      {% comment %}{%- comment %}<locksmith:140f>{% endcomment -%}{%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="description" content="{{ page_description | escape }}">{% endif -%}{%- comment %}original: <meta name="description" content="{{ page_description | escape }}">{%- endcomment %}{%- comment %}</locksmith:140f>{% endcomment -%}{% endcomment %}
     {% endif %}
 
     {% render 'meta-tags' %}
