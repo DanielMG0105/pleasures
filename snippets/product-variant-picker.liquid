@@ -54,6 +54,9 @@
             
             <div class="custom-colors">
               {%for product_related in product.metafields.custom.related_products.value  %}
+                {%- comment %}<locksmith:eb66>{% endcomment -%}
+                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product_related, subject_parent: product.metafields.custom.related_products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                {%- comment %}</locksmith:eb66>{% endcomment -%}
                 {%assign are_product_colors_to_show = 1 %}
                 
                 {%- if product_related.handle == product.handle-%}
