@@ -223,6 +223,10 @@
 </style>
 
 {%- style -%}
+  .header-menu-highlight {
+    color: {{ section.settings.menu_highlight_color }} !important;
+  }
+
   .header {
     padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
   }
@@ -672,6 +676,19 @@
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "text",
+      "id": "menu_highlight_label",
+      "label": "Highlighted menu item",
+      "default": "SALE",
+      "info": "Enter the exact menu item text to highlight. Matching ignores capitalization."
+    },
+    {
+      "type": "color",
+      "id": "menu_highlight_color",
+      "label": "Highlighted menu item color",
+      "default": "#FF0000"
     },
     {
       "type": "select",
