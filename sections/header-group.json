@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "FREE US SHIPPING OVER $200",
+            "text": "BF SALE LIVE NOW! FREE US SHIPPING OVER $200",
             "link": "shopify://collections/black-friday"
           }
         }
@@ -53,36 +53,10 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
-    },
-    "announcement_bar_E3cQXw": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_HUYNxL": {
-          "type": "announcement",
-          "settings": {
-            "text": "FREE SHIPPING ON ALL ORDERS OVER $150",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_HUYNxL"
-      ],
-      "disabled": true,
-      "settings": {
-        "color_scheme": "scheme-1",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "announcement_bar_E3cQXw"
+    "header"
   ]
 }
