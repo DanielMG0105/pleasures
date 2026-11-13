@@ -15,6 +15,33 @@
         "2_images_Pe9LYb": {
           "type": "2-images",
           "settings": {
+            "image1": "shopify://shop_images/Black_Friday_26_Flyers-01.jpg",
+            "image1_m": "shopify://shop_images/Black_Friday_26_Flyers-12.jpg",
+            "image2": "shopify://shop_images/Black_Friday_26_Flyers-05.jpg",
+            "image2_m": "shopify://shop_images/Black_Friday_26_Flyers-12.jpg",
+            "image_mobile": "second",
+            "overlay_color": "#000000",
+            "opacity": 1,
+            "title": "BLACK FRIDAY",
+            "description": "AVAILABLE NOW",
+            "button_text": "SHOP THE COLLECTION",
+            "link": "shopify://collections/black-friday",
+            "position": "centercenter"
+          }
+        }
+      },
+      "block_order": [
+        "2_images_Pe9LYb"
+      ],
+      "name": "BLACK FRIDAY",
+      "settings": {}
+    },
+    "vertical_carousel_BCQp3t": {
+      "type": "vertical-carousel",
+      "blocks": {
+        "2_images_A8Hi6L": {
+          "type": "2-images",
+          "settings": {
             "image1": "shopify://shop_images/DROP3.ADS.015.jpg",
             "image1_m": "shopify://shop_images/DROP3.MOBILE.02.jpg",
             "image2": "shopify://shop_images/DROP3.ADS.002.jpg",
@@ -31,7 +58,7 @@
         }
       },
       "block_order": [
-        "2_images_Pe9LYb"
+        "2_images_A8Hi6L"
       ],
       "name": "HOLIDAY",
       "settings": {}
@@ -326,6 +353,7 @@
   },
   "order": [
     "vertical_carousel_UbrPqh",
+    "vertical_carousel_BCQp3t",
     "featured_collection_fwEiX4",
     "vertical_carousel_9QtbYi",
     "vertical_carousel_RHkzGk",
