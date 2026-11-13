@@ -492,10 +492,6 @@
                   <ul class="footer-block__details-content list-unstyled">
                     {%- for link in block.settings.menu.links -%}
                       
-                        {%- comment %}<locksmith:08bf>{% endcomment -%}
-                          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-                        {%- comment %}</locksmith:08bf>{% endcomment -%}
-                      
                         <li>
                           <a
                             href="{{ link.url }}"
@@ -561,9 +557,6 @@
                 {%- if block.settings.menu != blank -%}
                   <ul class="footer-block__details-content list-unstyled">
                     {%- for link in block.settings.menu.links -%}
-                      {%- comment %}<locksmith:48db>{% endcomment -%}
-                        {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: link, subject_parent: block.settings.menu, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-                      {%- comment %}</locksmith:48db>{% endcomment -%}
                       <li>
                         <a
                           href="{{ link.url }}"
