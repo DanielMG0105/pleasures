@@ -14,6 +14,7 @@
       "blocks": {
         "1_image_eKzKfe": {
           "type": "1-image",
+          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/BF.02_fd09d8ef-42df-40a2-bc39-54d4a02e0eca.jpg",
             "image1_m": "shopify://shop_images/Black_Friday_26_Flyers-12.jpg",
@@ -28,7 +29,6 @@
         },
         "2_images_Pe9LYb": {
           "type": "2-images",
-          "disabled": true,
           "settings": {
             "image1": "shopify://shop_images/Black_Friday_26_Flyers-01.jpg",
             "image1_m": "shopify://shop_images/Black_Friday_26_Flyers-12.jpg",
