@@ -30,15 +30,15 @@
         "2_images_Pe9LYb": {
           "type": "2-images",
           "settings": {
-            "image1": "shopify://shop_images/Black_Friday_26_Flyers-01.jpg",
-            "image1_m": "shopify://shop_images/Black_Friday_26_Flyers-12.jpg",
-            "image2": "shopify://shop_images/Black_Friday_26_Flyers-05.jpg",
+            "image1": "shopify://shop_images/Black_Friday_26_Flyers_LIVENOW-01.jpg",
+            "image1_m": "shopify://shop_images/Black_Friday_26_Flyers_LIVENOW-01.jpg",
+            "image2": "shopify://shop_images/Black_Friday_26_Flyers_LIVENOW-04.jpg",
             "image2_m": "shopify://shop_images/BF_9x16_LiveNow-12.jpg",
             "image_mobile": "second",
             "overlay_color": "#d51010",
             "opacity": 1,
             "title": "BLACK FRIDAY",
-            "description": "AVAILABLE NOW",
+            "description": "WHILE SUPPLIES LAST",
             "button_text": "SHOP THE COLLECTION",
             "link": "shopify://collections/black-friday",
             "position": "centercenter"
