@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "BF SALE LIVE NOW! FREE US SHIPPING OVER $200",
+            "text": "BF SALE LIVE! $10 FLAT RATE, FREE US SHIPPING OVER $200",
             "link": "shopify://collections/black-friday"
           }
         }
@@ -40,6 +40,8 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "menu-header-otc",
+        "menu_highlight_label": "SALE",
+        "menu_highlight_color": "#ff0000",
         "menu_type_desktop": "mega",
         "sticky_header_type": "always",
         "show_line_separator": false,
